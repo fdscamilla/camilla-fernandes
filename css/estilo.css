@@ -89,7 +89,6 @@ h1 {
 .sobre {
   display: flex;
   flex-direction: row;
-  gap: 20px;
 }
 
 .corpo-sobre img {
@@ -137,6 +136,9 @@ ul {
   list-style-type: circle;
 }
 
+li {
+  line-height: 20px;
+}
 
 /* === contato === */
 
@@ -148,26 +150,33 @@ ul {
 
 
 form {
- line-height: 30px;
+ line-height: 20px;
  font-size: 14px;
  padding-left: 50px;
  padding-bottom: 30px;
- text-align: justify;
+ text-align: start;
  text-indent: 0;
+ vertical-align: top;
  margin: auto;
 }
 
-.textarea {
+.textarea  {
   width: 250px;
+  max-width: 350px;
+  min-height: 20px;
 }
 
 .textarea-msg {
+  width: 250px;
   height: 80px;
+  max-width: 350px;
+  min-height: 20px;
 }
+
+
 
 span {
   font-weight: bold;
-  
 }
 
 
@@ -201,7 +210,6 @@ span {
 
   .corpo-sobre img {
     align-self: center;
-    margin: auto;
   }
 
   .sobre {
