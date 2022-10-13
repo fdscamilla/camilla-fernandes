@@ -122,7 +122,6 @@ h1 {
 /* === interesses === */
 
 .corpo-interesses {
-  float: left;
   width: 50%;
   background-color: #ecd4ca;
   box-shadow: 0 5px 15px #b0a6a6;
@@ -142,7 +141,6 @@ ul {
 /* === contato === */
 
 .corpo-contato {
-  float: right;
   width: 50%;
   background-color: #ecd4ca;
   box-shadow: 0 5px 15px #b0a6a6;
@@ -199,12 +197,11 @@ span {
 
 @media (max-width: 800px) {
  
-  .paragrafo {
-    align-items: center;
-  }
+  
 
   .corpo-sobre img {
     align-self: center;
+    margin: auto;
   }
 
   .sobre {
@@ -226,7 +223,8 @@ span {
   }
 
   .paragrafo-corpo {
-    padding: 30px 20px 30px 30px;
+    padding: 20px 30px 30px 30px;
+    margin: auto;
   }
 
   .contato {
