@@ -159,8 +159,7 @@ li {
 form {
  line-height: 20px;
  font-size: 14px;
- padding-left: 60px;
- padding-bottom: 30px;
+ padding: 0 30px 30px 60px;
  text-align: start;
  text-indent: 0;
  vertical-align: top;
