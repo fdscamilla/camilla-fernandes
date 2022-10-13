@@ -27,6 +27,7 @@ body {
   padding: 20px 60px 30px 30px;
   text-align: justify;
   display: flex;
+  flex-direction: column;
   margin: auto;
 }
    
@@ -146,13 +147,19 @@ li {
   width: 50%;
   background-color: #ecd4ca;
   box-shadow: 0 5px 15px #b0a6a6;
+  font-size: 14px;
+}
+
+.corpo-contato a {
+  text-decoration: none;
+  color: black;
 }
 
 
 form {
  line-height: 20px;
  font-size: 14px;
- padding-left: 50px;
+ padding-left: 60px;
  padding-bottom: 30px;
  text-align: start;
  text-indent: 0;
@@ -175,7 +182,7 @@ form {
 
 
 
-span {
+.span-titulo {
   font-weight: bold;
 }
 
@@ -233,6 +240,8 @@ span {
   .paragrafo-corpo {
     padding: 20px 30px 30px 30px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .contato {
