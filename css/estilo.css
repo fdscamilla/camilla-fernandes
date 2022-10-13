@@ -18,19 +18,16 @@ body {
   
 .corpo {
   height: auto;
-  margin: 50px 40px 30px;
-  padding-bottom: 60px;
-  background-color: #ecd4ca;
   text-indent: 30px;
-  box-shadow: 0 5px 15px #b0a6a6;
 }
 
 
 .paragrafo-corpo {
   font-size: 14px;
-  padding: 30px 20px;
+  padding: 20px 60px 30px 30px;
   text-align: justify;
-  
+  display: flex;
+  margin: auto;
 }
    
 
@@ -39,6 +36,7 @@ h1 {
   color:#f9f6f5;
   background-color: #c98e77;
   padding: 2px 0 2px 0 20px;
+  margin-top: 0;
 }
   
 
@@ -74,7 +72,6 @@ h1 {
   font-size: 28px;
   font-weight: bold;
   color: #f9f6f5;
-  padding-top: 25px;
   padding-left: 40px;
   letter-spacing: 1px;
   text-decoration: none;
@@ -83,32 +80,80 @@ h1 {
 
 /* === sobre === */
 
+.corpo-sobre {
+  background-color: #ecd4ca;
+  margin: 30px 30px 30px;
+  box-shadow: 0 5px 15px #b0a6a6;
+}
 
+.sobre {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
 .corpo-sobre img {
   width: 160px;
-  float: left;
-  margin-right: 30px;
+  height: 160px;
+  margin: 30px;
   border: 5px solid #c98e77;
   border-radius: 50%;
+}
+
+.paragrafo-corpo {
+  display: flex;
+  margin: auto;
+}
+
+
+
+/* === bloco inferior === */
+
+.corpo-bloco {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 30px 30px;
+  gap: 30px;
+  
 }
 
 
 
 /* === interesses === */
 
+.corpo-interesses {
+  float: left;
+  width: 50%;
+  background-color: #ecd4ca;
+  box-shadow: 0 5px 15px #b0a6a6;
+}
 
 
+
+ul {
+  font-size: 14px;
+  padding-bottom: 30px;
+  margin-right: 40px;
+  margin-left: 50px;
+  list-style-type: circle;
+}
 
 
 /* === contato === */
 
+.corpo-contato {
+  float: right;
+  width: 50%;
+  background-color: #ecd4ca;
+  box-shadow: 0 5px 15px #b0a6a6;
+}
 
 
 form {
  line-height: 30px;
  font-size: 14px;
  padding-left: 50px;
+ padding-bottom: 30px;
  text-align: justify;
  text-indent: 0;
  margin: auto;
@@ -122,8 +167,9 @@ form {
   height: 80px;
 }
 
-.contato {
+span {
   font-weight: bold;
+  
 }
 
 
@@ -141,5 +187,50 @@ form {
   height: 30px;
   filter: invert(100%);
   padding: 10px 5px;
+}
+
+
+
+
+
+/* === media === */
+
+
+
+@media (max-width: 800px) {
+ 
+  .paragrafo {
+    align-items: center;
+  }
+
+  .corpo-sobre img {
+    align-self: center;
+  }
+
+  .sobre {
+    flex-direction: column;
+  }
+
+  .corpo-bloco {
+    flex-direction: column;
+  }
+
+  .corpo-interesses {
+    height: 50%;
+    width: auto;
+  }
+
+  .corpo-contato {
+    height: 50%;
+    width: auto;
+  }
+
+  .paragrafo-corpo {
+    padding: 30px 20px 30px 30px;
+  }
+
+  .contato {
+    align-items: center;
+  }
 }
 
